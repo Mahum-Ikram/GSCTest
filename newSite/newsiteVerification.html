@@ -1,78 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Start of Zeacon Code -->
+    <script type="text/javascript" async="" id="zeacon-sdk"
+        src="https://licencetotest.com/sdk/correlator.js?api-key=c0988d6d-b45f-48f0-869a-54a4720eb41e"></script>
+    <!-- End of Zeacon Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
-    <meta name="google-site-verification" content="VeyspfulNQqYCssNq_lBnuh-UGp_5aqZZcfcp3nlyGU"/>
-<!-- Start of Zeacon Code -->
-<script type="text/javascript" async="" id="zeacon-sdk" src="https://licencetotest.com/sdk/correlator.js?api-key=c0988d6d-b45f-48f0-869a-54a4720eb41e"></script>
-<!-- End of Zeacon Code -->
+    <title>Responsive Contact Page</title>
     <style>
-        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         header {
-            /* Remove background color */
-            padding: 10px 20px;
-            color: #333; /* Change text color */
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
         }
 
         nav ul {
-            list-style-type: none;
-            margin: 0;
+            list-style: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav ul li {
-            display: inline;
-            margin-right: 20px;
+            margin: 0 1rem;
         }
 
         nav ul li a {
-            color: #333; /* Change link color */
+            color: white;
             text-decoration: none;
         }
 
         main {
-            padding: 20px;
+            padding: 1rem;
         }
 
-        section {
-            margin-bottom: 20px;
+        section#contact {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        form label {
+        section#contact h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        label {
             display: block;
-            margin-bottom: 5px;
+            margin-top: 0.5rem;
         }
 
         input[type="text"],
         input[type="email"],
-        input[type="tel"],
-        input[type="submit"] {
+        input[type="tel"] {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
+            padding: 0.5rem;
+            margin-top: 0.25rem;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
+            border-radius: 4px;
         }
 
         input[type="submit"] {
-            background-color: #333;
-            color: #fff;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            width: 100%;
+            margin-top: 1rem;
             cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            section#contact {
+                padding: 1rem 0.5rem;
+            }
+
+            input[type="submit"] {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
-    
+        <div style="padding:56.25% 0 0 0;position:relative">
+            <div style="height:100%;left:0;position:absolute;top:0;width:100%"><iframe
+                    src="https://licencetotest.com/player/390d0992-b367-476b-851d-28ce2d9ca150"
+                    title="Zeacon | Embed Video" width="100%" height="100%" allowfullscreen=""
+                    style="border:0px"></iframe>
+                <script id="zeacon-sdk-correlation-manager" type="text/javascript"
+                    src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script>
+            </div>
+        </div>
         <h1>Welcome to My Website</h1>
         <nav>
             <ul>
@@ -83,51 +144,17 @@
     </header>
 
     <main>
-        <h2>Embed Livestream</h2>
-        <div style="padding:56.25% 0 0 0;position:relative"><div style="height:100%;left:0;position:absolute;top:0;width:100%"><iframe src="https://licencetotest.com/player/ada5e1e3-cb49-45d8-a0a6-a34d02461ea3" title="Zeacon | Embed Video" width="100%" height="100%" allowfullscreen="" style="border:0px"></iframe><script id="zeacon-sdk-correlation-manager" type="text/javascript" src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script></div></div>
-        
-        <h2>Embed Livestream</h2>
-        <iframe src="https://licencetotest.com/embed/3d1bd51de19" title="Zeacon | Embed Video" width="640px" height="360px" allowfullscreen="" style="border:0px"></iframe><script id="zeacon-sdk-correlation-manager" type="text/javascript" src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script>
-
-        <h2>Embed VOD</h2>
-        <div style="padding:56.25% 0 0 0;position:relative"><div style="height:100%;left:0;position:absolute;top:0;width:100%"><iframe src="https://licencetotest.com/embed/cd9b488bbc2" title="Zeacon | Embed Video" width="100%" height="100%" allowfullscreen="" style="border:0px"></iframe><script id="zeacon-sdk-correlation-manager" type="text/javascript" src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script></div></div>
-
-        <h2>Player VOD</h2>
-        <div style="padding:56.25% 0 0 0;position:relative"><div style="height:100%;left:0;position:absolute;top:0;width:100%"><iframe src="https://licencetotest.com/player/3557390f-fd66-4d8b-82d1-0f4bfe95e7d4" title="Zeacon | Embed Video" width="100%" height="100%" allowfullscreen="" style="border:0px"></iframe><script id="zeacon-sdk-correlation-manager" type="text/javascript" src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script></div></div>
-
-        <h2>Player Livestream</h2>
-        <div style="padding:56.25% 0 0 0;position:relative"><div style="height:100%;left:0;position:absolute;top:0;width:100%"><iframe src="https://licencetotest.com/embed/401c31cdeee" title="Zeacon | Embed Video" width="100%" height="100%" allowfullscreen="" style="border:0px"></iframe><script id="zeacon-sdk-correlation-manager" type="text/javascript" src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script></div></div>
-
-       <h2>Different Embed Livestream</h2>
-        <iframe src="https://licencetotest.com/embed/ae92f5935e7" title="Zeacon | Embed Video" width="640px" height="360px" allowfullscreen="" style="border:0px"></iframe><script id="zeacon-sdk-correlation-manager" type="text/javascript" src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script>
-
-        <h2>Different Player VOD</h2>
-        <iframe src="https://licencetotest.com/player/df94aca0-155c-4399-8778-d075d66bdc82" title="Zeacon | Embed Video" width="640px" height="360px" allowfullscreen="" style="border:0px"></iframe><script id="zeacon-sdk-correlation-manager" type="text/javascript" src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script>
-
-        <h2>Video</h2>
-        <iframe src="https://licencetotest.com/embed/30f94372239" title="Zeacon | Embed Video" width="640px" height="360px"
-        allowfullscreen="" style="border:0px"></iframe>
-    <script id="zeacon-sdk-correlation-manager" type="text/javascript"
-        src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script> 
-
-        <h2>Video</h2>
-    <iframe src="https://licencetotest.com/player/ddedca76-20d7-4bab-98e8-0db89a295f5e" title="Zeacon | Embed Video"
-        width="640px" height="360px" allowfullscreen="" style="border:0px"></iframe>
-    <script id="zeacon-sdk-correlation-manager" type="text/javascript"
-        src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script>
-
-
         <section id="contact">
             <h2>Contact Us</h2>
             <form id="contactForm">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
-                
+                <input type="text" id="name" name="name" required>
+
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email" required>
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required><br>
+                <input type="tel" id="phone" name="phone" required>
 
                 <input type="submit" value="Submit">
             </form>
@@ -139,7 +166,7 @@
     </footer>
 
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent default form submission
 
             var formData = new FormData(this);
@@ -149,18 +176,19 @@
                 method: "POST",
                 body: formData
             })
-            .then(response => response.text())
-            .then(data => {
-                console.log(data);
-                alert("Form submitted successfully!");
-                // Optionally, you can redirect the user to another page after successful form submission
-                // window.location.href = "thank_you.html";
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert("An error occurred while submitting the form. Please try again later.");
-            });
+                .then(response => response.text())
+                .then(data => {
+                    console.log(data);
+                    alert("Form submitted successfully!");
+                    // Optionally, you can redirect the user to another page after successful form submission
+                    // window.location.href = "thank_you.html";
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("An error occurred while submitting the form. Please try again later.");
+                });
         });
     </script>
 </body>
+
 </html>
